@@ -15,7 +15,7 @@ class WeatherItem extends StatelessWidget {
     return Column(
       children: [
         Container(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           height: 60,
           width: 60,
           decoration: BoxDecoration(
@@ -24,10 +24,10 @@ class WeatherItem extends StatelessWidget {
           ),
           child: Image.asset(imageUrl),
         ),
-        SizedBox(height: 8),
+        const SizedBox(height: 8),
         Text(
           value.toString() + unit,
-          style: TextStyle(
+          style: const TextStyle(
             fontWeight: FontWeight.bold,
             color: Colors.white,
           ),
